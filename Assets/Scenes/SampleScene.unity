@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1474310689}
-  smallStarPoints: 10
+  smallStarPoints: 5
   largeStarPoints: 20
   smallCloudPoints: 30
   largeCloudPoints: 50
@@ -1589,7 +1589,6 @@ GameObject:
   - component: {fileID: 1474310687}
   - component: {fileID: 1474310690}
   - component: {fileID: 1474310689}
-  - component: {fileID: 1474310688}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -1617,23 +1616,6 @@ RectTransform:
   m_AnchoredPosition: {x: -400, y: -100}
   m_SizeDelta: {x: 1080, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1474310688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474310686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f25a85f45e14549909c1511d987b54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScoreText: {fileID: 1474310689}
-  smallStarPoints: 10
-  largeStarPoints: 20
-  smallCloudPoints: 30
-  largeCloudPoints: 50
 --- !u!114 &1474310689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,7 +2052,7 @@ GameObject:
   - component: {fileID: 436486223}
   m_Layer: 0
   m_Name: CloudLarge
-  m_TagString: Untagged
+  m_TagString: LargeCloudTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2306,6 +2288,10 @@ PrefabInstance:
     - target: {fileID: 8383421078145302859, guid: f819bc86817f3474c9d4443f4a6c1473, type: 3}
       propertyPath: m_Name
       value: CloudLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383421078145302859, guid: f819bc86817f3474c9d4443f4a6c1473, type: 3}
+      propertyPath: m_TagString
+      value: LargeCloudTag
       objectReference: {fileID: 0}
     - target: {fileID: 9159254708843437041, guid: f819bc86817f3474c9d4443f4a6c1473, type: 3}
       propertyPath: m_RootOrder
